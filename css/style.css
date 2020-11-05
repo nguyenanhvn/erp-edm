@@ -1,0 +1,964 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800");
+.text-center {
+  text-align: center;
+}
+
+/* Component 1*/
+.twok__component__webinarhub__1 {
+  float: left;
+  width: 100%;
+  position: relative;
+  font-family: "Roboto", "Arial";
+  background: no-repeat center right/cover;
+  padding-top: 70px;
+  overflow: hidden;
+}
+.twok__component__webinarhub__1 .box__imgs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.twok__component__webinarhub__1 .box__imgs .item,
+.twok__component__webinarhub__1 .box__imgs .slick-list,
+.twok__component__webinarhub__1 .box__imgs .slick-track {
+  height: 100%;
+}
+.twok__component__webinarhub__1 .box__imgs .item__img {
+  background: no-repeat center right;
+  height: 100%;
+  float: left;
+  width: 100%;
+}
+.twok__component__webinarhub__1 .box__imgs .item .item__box {
+  display: none;
+}
+.twok__component__webinarhub__1 .box__text {
+  float: left;
+  width: 60%;
+  padding-right: 245px;
+  z-index: 100;
+  position: relative;
+  margin: 0;
+}
+.twok__component__webinarhub__1 .box__text .item {
+  outline: none;
+}
+.twok__component__webinarhub__1 .box__text .item .item__img {
+  display: none;
+}
+.twok__component__webinarhub__1 .box__text .item .item__box {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  padding: 70px 0 80px;
+}
+.twok__component__webinarhub__1 .box__text .item .item__box .item__child {
+  width: 100%;
+  float: right;
+}
+.twok__component__webinarhub__1 .box__text .item .item__box .item__child .item__child__box .item__heading {
+  font-size: 48px;
+  font-weight: normal;
+  color: #fff;
+  position: relative;
+  margin: 0 0 20px;
+  line-height: 1.2;
+  font-family: "Roboto Condensed", "Arial";
+  opacity: 0;
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition-delay: 0.9s;
+}
+.twok__component__webinarhub__1 .box__text .item .item__box .item__child .item__child__box .item__text {
+  font-size: 16px;
+  color: #fff;
+  opacity: 0;
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition-delay: 1s;
+}
+.twok__component__webinarhub__1 .box__text .slick-active .item__box .item__child .item__child__box .item__heading,
+.twok__component__webinarhub__1 .box__text .slick-active .item__box .item__child .item__child__box .item__text {
+  opacity: 1;
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.twok__component__webinarhub__1 .box__text .slick-dots {
+  bottom: 35px;
+  left: 0;
+  right: auto;
+  width: auto;
+}
+.twok__component__webinarhub__1 .box__text .slick-dots li {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+.twok__component__webinarhub__1 .box__text .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fff;
+}
+.twok__component__webinarhub__1 .box__text .slick-dots li button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+}
+.twok__component__webinarhub__1 .box__text .slick-dots li button:before {
+  font-size: 12px;
+  color: #fff;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+}
+
+@media (max-width: 1200px) {
+  .twok__component__webinarhub__1 .box__text .item .item__box .item__child .item__child__box .item__heading {
+    font-size: 36px;
+  }
+
+  .twok__component__webinarhub__1 .box__text .item .item__box .item__child .item__child__box .item__text {
+    font-size: 14px;
+  }
+
+  .twok__component__webinarhub__1 .box__text {
+    width: 70%;
+  }
+
+  .twok__component__webinarhub__1:before {
+    width: 68%;
+  }
+}
+@media (max-width: 992px) {
+  .twok__component__webinarhub__1:before {
+    width: 200%;
+  }
+
+  .twok__component__webinarhub__1 .box__text {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .twok__component__webinarhub__1 .box__text .slick-dots {
+    left: 10%;
+  }
+}
+@media (max-width: 767px) {
+  .twok__component__webinarhub__1 .box__text .item .item__box .item__child .item__child__box .item__heading {
+    font-size: 28px;
+  }
+}
+/* Component 2*/
+.twok__component__webinarhub__2 {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 40px 0 100px;
+}
+.twok__component__webinarhub__2 *:not(.container) {
+  float: left;
+  width: 100%;
+}
+.twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options {
+  float: left;
+  width: auto;
+  font-size: 18px;
+  font-weight: 500;
+}
+.twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options + .twok__filter__options {
+  margin-left: 50px;
+}
+.twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options .twok__filter__select {
+  position: relative;
+}
+.twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options .twok__filter__select:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background: url(../images/icon-arrow.png) no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  pointer-events: none;
+}
+.twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options .twok__filter__select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  border: 0;
+  border-radius: 0;
+  padding: 0 40px 0 10px;
+  line-height: 40px;
+  height: 40px;
+  outline: none;
+  width: auto;
+  outline: none;
+}
+.twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options .twok__filter__select select::-ms-expand {
+  display: none;
+}
+.twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options .twok__filter__select select:focus {
+  border-color: #999;
+}
+.twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options .twok__filter__select select option {
+  color: #000;
+  background: #fff;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items {
+  width: calc(100% + 30px);
+  margin: 15px -15px 30px;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item {
+  display: none;
+  width: calc(100% / 3);
+  padding: 15px;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__box {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e7e7e7;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__img {
+  height: 220px;
+  background: no-repeat center/cover;
+  position: relative;
+  overflow: hidden;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__img:hover:before, .twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__img:hover:after {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__img:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../images/plus.png) no-repeat center/cover;
+  opacity: 0;
+  margin: auto;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 9;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__img:before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.4, 1.4, 1);
+  transform: scale3d(1.4, 1.4, 1);
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.4);
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__img img {
+  display: none;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption {
+  padding: 20px 20px 90px;
+  background: #fff;
+  position: relative;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__heading {
+  margin: 0 0 9px;
+  font-size: 18px;
+  line-height: 1.3;
+  font-family: "SFProDisplay", "Arial";
+  font-weight: 600;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__heading a {
+  color: #000;
+  transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__heading a:hover {
+  color: #0066b3;
+  text-decoration: none;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__time {
+  color: #f37021;
+  font-size: 12px;
+  font-weight: 600;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__paragraph {
+  font-size: 15px;
+  font-family: "SFProDisplay", "Arial";
+  line-height: 1.2;
+  margin-top: 9px;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__countdown ul.twok__countdown__content {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  display: table;
+  width: calc(56px * 4);
+  float: none;
+  font-family: "SFProDisplay", "Arial";
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__countdown ul.twok__countdown__content li {
+  float: left;
+  width: 48px;
+  margin: 0 4px;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__countdown ul.twok__countdown__content li strong {
+  width: 48px;
+  height: 46px;
+  background: #ecf0f1;
+  font-size: 22px;
+  color: #ff0000;
+  text-align: center;
+  line-height: 46px;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__countdown ul.twok__countdown__content li span {
+  color: #2c3e50;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3px 0;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__button {
+  background: #0066b3;
+  border: 1px solid #0066b3;
+  width: 180px;
+  margin: auto;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  border-radius: 50px;
+  color: #fff;
+  line-height: 42px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "SFProDisplay", "Arial";
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__caption .twok__item__button:hover {
+  color: #0066b3;
+  background: transparent;
+  text-decoration: none;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items__load {
+  display: table;
+  margin: auto;
+  font-size: 16px;
+  font-family: "SFProDisplay", "Arial";
+  font-weight: 600;
+  color: #0066b3;
+  position: relative;
+  float: none;
+  text-transform: uppercase;
+  width: auto;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.twok__component__webinarhub__2 .twok__box .twok__items__load:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #0066b3;
+  position: relative;
+  bottom: 3px;
+}
+
+@media (max-width: 1200px) {
+  .twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__img {
+    height: 180px;
+  }
+}
+@media (max-width: 992px) {
+  .twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options {
+    width: 100%;
+    margin: 5px 0 !important;
+  }
+
+  .twok__component__webinarhub__2 .twok__box .twok__filter .twok__filter__options .twok__filter__select select {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item {
+    width: 100%;
+  }
+
+  .twok__component__webinarhub__2 .twok__box .twok__items .twok__items__item .twok__item__img {
+    height: 200px;
+  }
+}
+/* Component Detail */
+.twok__component__webinarhub__detail__banner {
+  float: left;
+  width: 100%;
+  position: relative;
+  font-family: "Roboto", "Arial";
+  background: no-repeat center/cover;
+  overflow: hidden;
+  min-height: 470px;
+}
+.twok__component__webinarhub__detail__banner .box__text {
+  float: left;
+  width: 100%;
+  z-index: 100;
+  position: relative;
+  margin: 0;
+}
+.twok__component__webinarhub__detail__banner .box__text .item {
+  outline: none;
+}
+.twok__component__webinarhub__detail__banner .box__text .item .item__box {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  min-height: 470px;
+  padding: 30px 0;
+}
+.twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child {
+  width: 100%;
+  float: right;
+}
+.twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child .item__child__box .item__heading {
+  font-size: 48px;
+  font-weight: normal;
+  color: #fff;
+  position: relative;
+  margin: 0 0 20px;
+  line-height: 1.2;
+  font-family: "Roboto Condensed", "Arial";
+  text-align: center;
+}
+.twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child .item__child__box .item__btn {
+  clear: both;
+  display: table;
+  margin: 40px auto auto;
+  margin-bottom: 0;
+  padding: 0 22px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 2px;
+  line-height: 42px;
+  transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+  font-family: "SFProDisplay", "Arial";
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child .item__child__box .item__btn:hover {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+.twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child .item__child__box .item__countdown ul.twok__countdown__content {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px auto auto;
+  display: table;
+  float: none;
+  font-family: "SFProDisplay", "Arial";
+}
+.twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child .item__child__box .item__countdown ul.twok__countdown__content li {
+  float: left;
+  width: 70px;
+  margin: 0 6px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 0 15px;
+}
+.twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child .item__child__box .item__countdown ul.twok__countdown__content li strong {
+  display: block;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+.twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child .item__child__box .item__countdown ul.twok__countdown__content li span {
+  display: block;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.twok__component__webinarhub__detail__content {
+  float: left;
+  width: 100%;
+  position: relative;
+  padding: 60px 0 100px;
+}
+.twok__component__webinarhub__detail__content .twok__content {
+  float: left;
+  width: calc(100% - 360px);
+  padding-right: 55px;
+  font-family: "SFProDisplay", "Arial";
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__head {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__head p {
+  margin-bottom: 0;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__paragraph {
+  float: left;
+  width: 100%;
+  font-size: 16px;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__paragraph p {
+  margin-bottom: 14px;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__heading {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__item {
+  float: left;
+  width: 100%;
+}
+.twok__component__webinarhub__detail__content .twok__content table tr {
+  background: #cfd5e9;
+  font-weight: 600;
+  font-size: 16px;
+}
+.twok__component__webinarhub__detail__content .twok__content table tr:nth-child(even) {
+  background: #e9ebf5;
+}
+.twok__component__webinarhub__detail__content .twok__content table tr td {
+  padding: 12px 8px;
+}
+.twok__component__webinarhub__detail__content .twok__content table tr td:first-child {
+  width: 180px;
+  border-right: 1px solid #fff;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__speakers {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__speakers li {
+  float: left;
+  width: calc((100% - 30px) / 2);
+  margin: 0 30px 30px 0;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__speakers li:nth-child(2n) {
+  margin-right: 0;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__speakers li .speaker__img {
+  float: left;
+  width: 100px;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__speakers li .speaker__info {
+  float: right;
+  width: calc(100% - 100px);
+  padding-left: 25px;
+  font-family: "SFProDisplay", "Arial";
+  line-height: 18px;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__speakers li .speaker__info .speaker__name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__speakers li .speaker__info .speaker__position {
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__speakers li .speaker__info .speaker__company {
+  font-size: 14px;
+  margin-top: 8px;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__share {
+  width: 100%;
+  margin-top: 10px;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__share span {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "SFProDisplay", "Arial";
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__share ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__share ul li {
+  float: left;
+  transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__share ul li:hover {
+  opacity: 0.7;
+}
+.twok__component__webinarhub__detail__content .twok__content .twok__content__share ul li + li {
+  margin-left: 8px;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar {
+  float: right;
+  width: 360px;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__heading {
+  font-size: 18px;
+  font-family: "SFProDisplay", "Arial";
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 25px;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form {
+  float: left;
+  width: 100%;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group {
+  margin-bottom: 15px;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form input[type=text] {
+  width: 100%;
+  line-height: 40px;
+  padding: 0 40px 0 15px;
+  font-family: "SFProDisplay", "Arial";
+  border: 1px solid #dddddd;
+  background: #dddddd;
+  font-size: 16px;
+  outline: none;
+  height: 42px;
+  transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form input[type=text]:focus {
+  background: #fff;
+  border-color: #000;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form input[type=text]:not(:placeholder-shown) {
+  background: #fff;
+  border-color: #000;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form input[type=submit] {
+  line-height: 40px;
+  padding: 0 20px;
+  border-radius: 3px;
+  background: #0066b3;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SFProDisplay", "Arial";
+  margin-top: 10px;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__select {
+  position: relative;
+  width: 100%;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__select.select__change select {
+  background: #fff;
+  border-color: #000;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__select:after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 5px;
+  background: url(../images/icon-down.png) no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+  pointer-events: none;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 100%;
+  height: 42px;
+  border: 1px solid #ddd;
+  background: #ddd;
+  line-height: 40px;
+  padding: 0 40px 0 15px;
+  outline: none;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__select select::-ms-expand {
+  display: none;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__select select:focus {
+  border-color: #999;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__select select option {
+  color: #000;
+  background: #fff;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__text {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__text a {
+  color: #0066b3;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__checkbox {
+  width: 100%;
+  position: relative;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__checkbox input {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__form .group__checkbox label {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 25px;
+  font-weight: normal;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__video {
+  float: left;
+  width: 100%;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__video .twok__box__video {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  background: no-repeat center/cover;
+  position: relative;
+  height: 230px;
+  transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__video .twok__box__video:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__video .twok__box__video:hover {
+  cursor: pointer;
+  pointer-events: auto;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__video .twok__box__video:hover:before {
+  opacity: 0.8;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__video .twok__box__video .twok__box__video__inside {
+  position: relative;
+  z-index: 9;
+  color: #fff;
+  text-align: center;
+}
+.twok__component__webinarhub__detail__content .twok__sidebar .twok__video .twok__box__video .twok__box__video__inside span {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "SFProDisplay", "Arial";
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .twok__component__webinarhub__detail__content .twok__content {
+    width: calc(100% - 260px);
+  }
+  .twok__component__webinarhub__detail__content .twok__sidebar {
+    width: 260px;
+  }
+
+  .twok__component__webinarhub__detail__content .twok__content .twok__content__speakers li {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .twok__component__webinarhub__detail__content .twok__sidebar .twok__video .twok__box__video {
+    height: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .twok__component__webinarhub__detail__content .twok__sidebar .twok__video .twok__box__video {
+    height: 250px;
+  }
+
+  .twok__component__webinarhub__detail__content .twok__content {
+    width: 100%;
+    padding: 0;
+  }
+  .twok__component__webinarhub__detail__content .twok__sidebar {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child .item__child__box .item__heading {
+    font-size: 32px;
+  }
+
+  .twok__component__webinarhub__detail__banner .box__text .item .item__box .item__child .item__child__box .item__countdown ul.twok__countdown__content li strong {
+    font-size: 22px;
+  }
+}
+/* Component 1 */
+.twok__component__webinarhub__1 .item {
+  position: relative;
+}
+.twok__component__webinarhub__1 .item .item-img {
+  width: 100%;
+}
+.twok__component__webinarhub__1 .item .item-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  color: #FFFFFF;
+}
+.twok__component__webinarhub__1 .item .item-content h2 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 70px;
+}
+.twok__component__webinarhub__1 .item .item-content p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+.twok__component__webinarhub__1 .item .item-content button {
+  background: #F37021;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  margin-top: 40px;
+}
+.twok__component__webinarhub__1 .item .over-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(8, 12, 31, 0.4);
+}
+
+.twok__component__webinarhub__2 {
+  margin-top: 100px;
+}
+.twok__component__webinarhub__2 .twok__introduce {
+  display: flex;
+  justify-content: space-between;
+}
+.twok__component__webinarhub__2 .twok__introduce .twok__introduce__content {
+  margin-top: 70px;
+  width: 50%;
+  padding-right: 135px;
+}
+.twok__component__webinarhub__2 .twok__introduce .twok__introduce__content h3 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 70px;
+  text-transform: capitalize;
+  color: #1B2345;
+}
+.twok__component__webinarhub__2 .twok__introduce .twok__introduce__content p {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(5, 22, 35, 0.8);
+}
+.twok__component__webinarhub__2 .twok__introduce .twok__introduce__img {
+  width: 50%;
+  position: relative;
+}
+.twok__component__webinarhub__2 .twok__introduce .twok__introduce__img img {
+  width: 538px;
+}
+.twok__component__webinarhub__2 .twok__introduce .twok__introduce__img .img-introduce {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 281px;
+}
+.twok__component__webinarhub__2 .twok__introduce .twok__introduce__img .img-introduce img {
+  width: 100%;
+  border: 8px solid #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */

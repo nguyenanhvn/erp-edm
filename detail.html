@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Analytic - FPT Software</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/font.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Webinar Hub Banner -->
+    <section class="twok__component__webinarhub__detail__banner" style="background-image: url(images/banner-detail.png);">
+        <div class="container">
+            <div class="box__text">
+                <div class="item">
+                    <div class="item__box">
+                        <div class="item__child">
+                            <div class="item__child__box">
+                                <h2 class="item__heading">
+                                    Webinar: COVID-19 and the <br />
+                                    New Normal – Geo-diversification 2020
+                                </h2>
+
+                                <div class="item__countdown" data-date="09/08/2020 13:00:00">
+                                    <ul class="twok__countdown__content">
+                                        <li class="twok__countdown__day">
+                                            <strong>...</strong>
+                                            <span>days</span>
+                                        </li>
+                                        <li class="twok__countdown__hour">
+                                            <strong>...</strong>
+                                            <span>hours</span>
+                                        </li>
+                                        <li class="twok__countdown__minute">
+                                            <strong>...</strong>
+                                            <span>min</span>
+                                        </li>
+                                        <li class="twok__countdown__second">
+                                            <strong>...</strong>
+                                            <span>sec</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="item__btn">
+                                    Watch Now
+                                </div>                                
+
+                                <script>
+                                    jQuery(document).ready(function($) {      
+                                        var countDownDate = new Date(jQuery('.item__countdown').attr('data-date')).getTime();
+
+                                        if(new Date().getTime() > countDownDate) {
+                                            jQuery(".item__countdown").remove();
+                                        } else {
+                                            // Update the count down every 1 second
+                                            var x = setInterval(function() {
+                                                // Get today's date and time
+                                                var now = new Date().getTime();
+
+                                                // Find the distance between now and the count down date
+                                                var distance = countDownDate - now;
+                                                // Time calculations for days, hours, minutes and seconds
+                                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                                // Display the result in the element with id="demo"
+                                                jQuery(".item__countdown .twok__countdown__day strong").text(days);
+                                                jQuery(".item__countdown .twok__countdown__hour strong").text(hours);
+                                                jQuery(".item__countdown .twok__countdown__minute strong").text(minutes);
+                                                jQuery(".item__countdown .twok__countdown__second strong").text(seconds);   
+                                                if (distance < 0) {
+                                                    clearInterval(x);
+                                                    jQuery(".item__countdown").remove();
+                                                }
+                                                // If the count down is finished, write some text
+                                            }, 1000);   
+                                        }
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /Webinar Hub Banner -->
+
+    <!-- Webinar Hub Listing -->
+    <section class="twok__component__webinarhub__detail__content">
+        <div class="container">
+            <div class="twok__box">
+                <div class="twok__content">
+                    <div class="twok__content__head">
+                        <p>Title: COVID-19 and the New Normal – Geo-diversification 2020</p>
+                        <p>Date: July 9, 2020</p>
+                        <p>Time: 8.30 am PT / 11.30 am ET / 4.30 pm UK</p>
+                    </div>
+
+                    <div class="twok__content__paragraph">
+                        <p>On June 24, FPT will be hosting a free webinar on COVID-19 and geo-diversification, helping companies in Japan adapt to the “new normal” in the aftermath of the global pandemic.</p>
+
+                        <p>As the coronavirus continues its disruption to Japan’s economy, companies here are forced to reconsider their supply chain networks to survive and thrive in the “new normal” phase. During this webinar, confirmed speakers from Mitsubishi, Denso Manufacturing, Japan External Trade Organization (JETRO), and FPT will be sharing insights on how companies can build supply chain resilience and why Vietnam can be an attractive destination for businesses to reshape their supply chain networks amid COVID-19 epidemic.</p>
+                    </div>
+
+                    <div class="twok__content__item">
+                        <div class="twok__content__heading">Agenda</div>
+
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>15:00 - 15:05</td>
+                                    <td>Opening</td>
+                                </tr>
+                                <tr>
+                                    <td>15:05 - 15:15</td>
+                                    <td>Vietnam: an open opportunity for supply chain resillence</td>
+                                </tr>
+                                <tr>
+                                    <td>15:15 - 15:25</td>
+                                    <td>How to overcome the COVID-19 supply chain strain</td>
+                                </tr>
+                                <tr>
+                                    <td>15:25 - 15:45</td>
+                                    <td>Reshape supply networks to enter the new normal</td>
+                                </tr>
+                                <tr>
+                                    <td>15:45 - 15:55</td>
+                                    <td>Managing supply chain disruption amid pandemic</td>
+                                </tr>
+                                <tr>
+                                    <td>15:66 - 16:15</td>
+                                    <td>Q&A session</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="twok__content__item">
+                        <div class="twok__content__heading">Speakers</div>       
+
+                        <ul class="twok__content__speakers">
+                            <li>
+                                <div class="speaker__img">
+                                    <img src="images/speakers-1.png" alt="">
+                                </div>
+                                <div class="speaker__info">
+                                    <div class="speaker__name">Mr. Do Nhat Hoang</div>
+                                    <div class="speaker__position">DIRECTOR GENERAL</div>
+                                    <div class="speaker__company">
+                                        The Foreign Investment Agency, Ministry of Planning and Investment
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="speaker__img">
+                                    <img src="images/speakers-2.png" alt="">
+                                </div>
+                                <div class="speaker__info">
+                                    <div class="speaker__name">Dr. Truong Gia Binh</div>
+                                    <div class="speaker__position">CHAIRMAN</div>
+                                    <div class="speaker__company">
+                                        Vietnam Software Association - FPT Corporation
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="speaker__img">
+                                    <img src="images/speakers-3.png" alt="">
+                                </div>
+                                <div class="speaker__info">
+                                    <div class="speaker__name">Mr. Alexander Feldman</div>
+                                    <div class="speaker__position">CHAIRMAN, PRESIDENT & CEO</div>
+                                    <div class="speaker__company">
+                                        US-ASEAN Business Council
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="speaker__img">
+                                    <img src="images/speakers-4.png" alt="">
+                                </div>
+                                <div class="speaker__info">
+                                    <div class="speaker__name">Mr. John Terwilliger</div>
+                                    <div class="speaker__position">
+                                        VICE PRESIDENT, CLIENT ENGINEERING EXCELLENCE AND OPERATIONS, CLIENT SOLUTIONS GROUP
+                                    </div>
+                                    <div class="speaker__company">
+                                        Dell
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>                 
+                    </div>
+
+                    <div class="twok__content__share">
+                        <span>Now, get your friends and colleagues on board!</span>
+
+                        <ul>
+                            <li>
+                                <a href="javascript:;" title="facebook" target="popup" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://blog.growsteak.com/71-thong-ke-du-lieu-xu-huong-ve-social-media-nam-2020','Facebook Share','width=600,height=600')"><img src="images/icon-fb.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="twitter" target="popup" onclick="window.open('https://twitter.com/home?status=71 Thống kê, Dữ liệu và Xu hướng về Social Media năm 2020 dành cho các Marketers+https://blog.growsteak.com/71-thong-ke-du-lieu-xu-huong-ve-social-media-nam-2020','Twitter Share','width=600,height=600')"><img src="images/icon-twi.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="linkedin" target="popup" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=https://blog.growsteak.com/71-thong-ke-du-lieu-xu-huong-ve-social-media-nam-2020','LinkedIn Share','width=600,height=600')"><img src="images/icon-link.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="twok__sidebar">
+                    <div class="twok__form">
+                        <form action="detail_submit" method="get" accept-charset="utf-8">
+                            <div class="group">
+                                <input type="text" name="" placeholder="*First Name">
+                            </div>
+                            <div class="group">
+                                <input type="text" name="" placeholder="*Last Name">
+                            </div>
+                            <div class="group">
+                                <input type="text" name="" placeholder="*Business Email">
+                            </div>
+                            <div class="group">
+                                <div class="group__select">
+                                    <select name="">
+                                        <option value="" disabled selected>*Country/Region</option>
+                                        <option value="">Viet Nam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <input type="text" name="" placeholder="*Phone Number">
+                            </div>
+                            <div class="group">
+                                <input type="text" name="" placeholder="*Company Name">
+                            </div>
+                            <div class="group">
+                                <div class="group__select">
+                                    <select name="">
+                                        <option value="" disabled selected>*Number of Employees</option>
+                                        <option value="">+84</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="group__select">
+                                    <select name="">
+                                        <option value="" disabled selected>*Job Level</option>
+                                        <option value="">1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="group__text">
+                                    Your use of this website is subject to the Automation Anywhere <a href="" title="">Terms</a> and <a href="" title="">Privacy Policy</a>.
+                                </div>
+
+                                <div class="group__checkbox">
+                                    <input id="check" type="checkbox" name="">
+                                    <label for="check">By checking this box, you agree to receive communications from Automation Anywhere regarding its products and services offerings.</label>
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <input type="submit" name="" value="Register now">
+                            </div>
+                        </form>
+
+                        <script>
+                            jQuery(document).ready(function($) {
+                                jQuery(document).on('change', '.twok__form select', function(){
+                                    event.preventDefault();
+                                    jQuery(this).parent().addClass('select__change');
+                                });
+                            });
+                        </script>
+                    </div>
+
+                    <div class="twok__video">
+                        <div class="twok__heading">Webinar Video Record</div>
+
+                        <div class="twok__box__video" style="background-image: url(images/bg-video.png);">
+                            <div class="twok__box__video__inside">
+                                <img src="images/icon-play-video-webinar.png" alt="">
+                                <span>Play Video</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Webinar Hub Listing -->
+</body>
+
+</html>
