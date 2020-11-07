@@ -14,8 +14,47 @@ $color: #0066b3;
     font-family: 'SFProDisplay' , 'Arial';
 }
 
+section{
+    padding: 80px 0;
+    @media (max-width: 767px){
+        padding: 36px 0;
+    }
+}
 .text-center{
     text-align: center;
+}
+p{
+    color: rgba(5, 22, 35, 0.8);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+}
+h3.twok__title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    text-transform: capitalize;
+    color: #1B2345;
+    position: relative;
+    margin: 0;
+    @media (max-width: 767px){
+        font-size: 24px;
+        line-height: 33px;
+    }
+    &::after{
+        content: '';
+        display: block;
+        width: 104px;
+        height: 2px;
+        background: #0048B3;
+        position: absolute;
+        bottom: -18px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 }
 
 /* Component 1*/
@@ -205,7 +244,7 @@ $color: #0066b3;
         float: left;
         width: 100%;
         position: relative;
-        padding: 40px 0 100px;
+        padding: 40px 0 200px;
         *:not(.container){
             float: left;
             width: 100%;
@@ -933,6 +972,7 @@ $color: #0066b3;
 
 /* Component 1 */
     .twok__component__webinarhub__1{
+        margin: 0;
         .item{
             position: relative;
             .item-img{
@@ -945,6 +985,7 @@ $color: #0066b3;
                 transform: translate(-50%, -50%);
                 z-index: 9;
                 color: #FFFFFF;
+                width: 100%;
                 h2{
                     font-weight: bold;
                     font-size: 64px;
@@ -954,6 +995,7 @@ $color: #0066b3;
                     font-weight: normal;
                     font-size: 16px;
                     line-height: 22px;
+                    color: #FFFFFF;
                 }
                 button{
                     background: #F37021;
@@ -979,8 +1021,17 @@ $color: #0066b3;
         }
     }
 
+    @media (max-width: 767px){
+        .twok__component__webinarhub__1 .item .item-content h2{
+            font-size: 40px;
+        }
+        .twok__component__webinarhub__1 .item .item-content p{
+            font-size: 14px;
+        }
+    }
+
+/* Component 2 */
     .twok__component__webinarhub__2{
-        margin-top: 100px;
         .twok__introduce{
             display: flex;
             justify-content: space-between;
@@ -1020,5 +1071,409 @@ $color: #0066b3;
                 }
             }
         }
+    }
 
+    @media (max-width: 767px){
+        .twok__component__webinarhub__2 .twok__introduce .twok__introduce__content, .twok__component__webinarhub__2 .twok__introduce .twok__introduce__img{
+            width: 100%;
+            padding-right: 0;
+            margin-top: 0;
+        }
+        .twok__component__webinarhub__2 .twok__introduce{
+            display: block;
+            text-align: center;
+        }
+        .twok__component__webinarhub__2 .twok__introduce .twok__introduce__img img{
+            width: 100%;
+        }
+        .twok__component__webinarhub__2 .twok__introduce .twok__introduce__img .img-introduce{
+            img{
+
+                display: none;
+            }
+        }
+        .twok__component__webinarhub__2 .twok__introduce .twok__introduce__content h3{
+            font-size: 24px;
+            line-height: 33px;
+        }
+        .twok__component__webinarhub__2{
+            padding: 0 0 36px;
+        }
+    }
+
+/* Component 3 */
+    .twok__component__webinarhub__3{
+        .twok__success{
+            .twok__success__content{
+                margin-top: 70px;
+                display: flex;
+                justify-content: space-between;
+                .twok__success__box{
+                    width: calc((100% / 3) - 16px);
+                    img{
+                        width: 100%;
+                    }
+                    .twok__success__txt{
+                        background: #1E71EC;
+                        padding: 28px 32px;
+                        color: #ffffff;
+                        border-bottom-left-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        h3{
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 32px;
+                            margin: 0;
+                            min-height: 128px;
+                        }
+                        a.read-more{
+                            margin-top: 24px;
+                            font-size: 16px;
+                            line-height: 28px;
+                            color: #ffffff;
+                            display: block;
+                            img{
+                                width: 24px;
+                                padding: 7px 5px;
+                                border-radius: 50%;
+                                background: #F4F6FA;
+                                margin-left: 16px;
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        margin: 0 32px;
+                        @media (max-width: 767px){
+                            margin: 0 0 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 767px){
+        .twok__component__webinarhub__3 .twok__success .twok__success__content{
+            display: block;
+        }
+        .twok__component__webinarhub__3 .twok__success .twok__success__content .twok__success__box{
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+
+/* Component 4 */
+    .twok__component__webinarhub__4{
+        background: #E5E5E5;
+        .twok__what{
+            .twok__what__content{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 73px;
+                .twok__what__content__box{
+                    background-color: #FFFFFF;
+                    border: 1px solid #E6E6E6;
+                    border-radius: 4px;
+                    width: 48%;
+                    padding: 32px 46px;
+                    position: relative;
+                    // background: url(../images/bg-what-1.png) no-repeat bottom right 100px;
+                    .twok__what__bg{
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 135px;
+                        opacity: 0.3;
+                    }
+                    h4{
+                        color: #1B2345;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 33px;
+                    }
+               
+                    p{
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: rgba(5, 22, 35, 0.8);
+                    }
+                    .twok__note{
+                        margin: 35px 0 0 20px;
+                        h5{
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 25px;
+                            position: relative;
+                            margin-bottom: 14px;
+                            &::after{
+                                content: '';
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50%;
+                                background: #1E71EC;
+                                position: absolute;
+                                left: -20px;
+                                top: 8px;
+                            }
+                        }
+                        p{
+                            color: #0048B3;
+                            font-size: 14px;
+                            line-height: 24px;
+                            text-transform: capitalize;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        .twok__component__webinarhub__4 .twok__what .twok__what__content{
+            display: block;
+        }
+        .twok__component__webinarhub__4 .twok__what .twok__what__content .twok__what__content__box{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .twok__component__webinarhub__5 .twok__number{
+            background: none !important;
+            padding-bottom: 0 !important;
+        }
+    }
+
+/* Component 5 */
+    .twok__component__webinarhub__5{
+        padding-bottom: 0;
+        .twok__number{
+            background: url(../images/bg-number.png) no-repeat bottom;
+            padding-bottom: 140px;
+            .twok__number__content{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 70px;
+                .twok__number__item{
+                    width: calc(100% / 4);
+                    img{
+                        height: 56px;
+                        width: auto;
+                    }
+                    h3{
+                        font-weight: bold;
+                        font-size: 40px;
+                        line-height: 70px;
+                        text-transform: capitalize;
+                        color: #1B2345;
+                        margin: 15px 0 0;
+                    }
+                    p{
+                        color: rgba(5, 22, 35, 0.8);
+                        font-size: 16px;
+                        line-height: 28px;
+                        text-align: center;
+                        text-transform: capitalize;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        .twok__component__webinarhub__5 .twok__number .twok__number__content{
+            display: block;
+        }
+        .twok__component__webinarhub__5 .twok__number .twok__number__content .twok__number__item{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+/* Component 6 */
+    .twok__component__webinarhub__6{
+        position: relative;
+        .twok__insights{
+            margin-top: 70px;
+            .owl-nav{
+                button.owl-prev{
+                    position: absolute;
+                    left: -123px;
+                    top: 50%;
+                }
+                button.owl-next{
+                    position: absolute;
+                    right: -123px;
+                    top: 50%;
+                }
+            }
+            .owl-dots{
+                margin-top: 60px;
+                button.owl-dot{
+                    span{
+
+                        width: 64px;
+                        height: 6px;
+                        background: #C4C4C4;
+                        border-radius: initial;
+                    }
+                }
+                button.owl-dot.active{
+                    span{
+
+                        background: #1E71EC;
+                        height: 9px;
+                    }
+                }
+            }
+            .twok__insights__content{
+                h3{
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #1B2345;
+                    margin: 32px 0 24px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        .twok__component__webinarhub__6 .twok__insights .owl-nav button.owl-next{
+            right: 0;
+            top: 50%;
+            img{
+                width: 35px;
+            }
+        }
+        .twok__component__webinarhub__6 .twok__insights .owl-nav button.owl-prev{
+            left: 0;
+            img{
+                width: 35px;
+            }
+        }
+    }
+
+/* Component 7 */
+    .twok__component__webinarhub__7{
+        background: #F6F7F8;
+        .twok__reasons{
+            .twok__reasons__content{
+                margin-top: 70px;
+                display: flex;
+                justify-content: space-between;
+                .twok__reasons__box{
+                    width: calc((100% / 3) - 16px);
+                    // img{
+                    //     width: 100%;
+                    // }
+                    background: #FFFFFF;    
+                    border-radius: 4px;
+                    padding: 56px 40px;
+                    .twok__reasons__txt{
+                        h3{
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 28px;
+                            margin: 45px 0 20px;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: 16px;
+                            line-height: 28px;
+                            color: rgba(5, 22, 35, 0.8);
+                        }
+                    }
+                    &:nth-child(2){
+                        margin: 0 32px;
+                        @media (max-width: 767px){
+                            margin: 0 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        .twok__component__webinarhub__7 .twok__reasons .twok__reasons__content{
+            display: block;
+        }
+        .twok__component__webinarhub__7 .twok__reasons .twok__reasons__content .twok__reasons__box{
+            width: 100%;
+            margin: 0 0 20px;
+        }
+    }
+
+/* Component 8 */
+    .twok__component__webinarhub__8{
+        .twok__touch{
+            display: flex;
+            justify-content: space-between;
+            .twok__touch__title{
+                width: 50%;
+                padding-right: 30px;
+                h2{
+                    color: #1B2345;
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 70px;
+                    text-transform: uppercase;
+                    margin-top: 0;
+                }
+                p{
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+            .twok__touch__form{
+                width: 50%;
+                form{
+                    .twok__touch__form__name{
+                        display: flex;
+                        justify-content: space-between;
+                        div{
+                            width: 48%;
+                        }
+                    }
+                    input[type="text"], select, textarea {
+                        width: 100%;
+                        background: #d7d7d729;
+                        border: 1px solid #bbb;
+                        border-radius: 4px;
+                        height: 40px;
+                    }
+                    div{
+                        margin-bottom: 15px;
+                    }
+                    input[type="submit"]{
+                        background: #F37021;
+                        border-radius: 4px;
+                        border: none;
+                        font-weight: bold;
+                        font-size: 15px;
+                        line-height: 24px;
+                        letter-spacing: 0.2em;
+                        text-transform: uppercase;
+                        padding: 16px 40px;
+                        margin-top: 40px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        .twok__component__webinarhub__8 .twok__touch{
+            display: block;
+        }
+        .twok__component__webinarhub__8 .twok__touch .twok__touch__title{
+            margin-bottom: 50px;
+        }
+        .twok__component__webinarhub__8 .twok__touch .twok__touch__title, .twok__component__webinarhub__8 .twok__touch .twok__touch__form{
+            width: 100%;
+            padding-right: 0;
+        }
     }
