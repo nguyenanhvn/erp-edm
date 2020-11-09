@@ -211,7 +211,7 @@ h3.twok__title{
             img.bg1{
                 position: absolute;
                 top: 74px;
-                left: 185px;
+                left: 0;
                 @media (max-width: 767px){
                     display: none;
                 }
@@ -219,7 +219,7 @@ h3.twok__title{
             img.bg2{
                 position: absolute;
                 bottom: 74px;
-                right: 185px;
+                right: 0;
                 @media (max-width: 767px){
                     display: none;
                 }
@@ -275,6 +275,7 @@ h3.twok__title{
 
 /* Component 3 */
     .twok__component__webinarhub__3{
+        padding-bottom: 0;
         position: relative;
         .twok__success{
             img.bg2{
@@ -372,6 +373,8 @@ h3.twok__title{
     .twok__component__webinarhub__4{
         background: #E5E5E5;
         position: relative;
+        margin-top: 80px;
+        
         .twok__what{
             img.bg2{
                 position: absolute;
@@ -456,6 +459,10 @@ h3.twok__title{
         .twok__component__webinarhub__5 .twok__number{
             background: none !important;
             padding-bottom: 0 !important;
+        }
+        .twok__component__webinarhub__4{
+            margin-top: 30px !important;
+            padding-top: 30px !important;
         }
     }
 
@@ -671,16 +678,16 @@ h3.twok__title{
             }
             img.bg1{
                 position: absolute;
-                top: 74px;
-                right: 185px;
+                top: 5%;
+                right: 0;
                 @media (max-width: 767px){
                     display: none;
                 }
             }
             img.bg2{
                 position: absolute;
-                bottom: 74px;
-                left: 185px;
+                bottom: 5%;
+                left: 0;
                 @media (max-width: 767px){
                     display: none;
                 }

@@ -70,6 +70,9 @@
                         <img src="images/success1.png" alt="success1">
                         <div class="twok__success__txt">
                             <h3>Enhancing Collaboration between Patients & Doctors in A Healthcare Provider</h3>
+                            <h3>Enhancing Collaboration between Patients & Doctors in A Healthcare Provider</h3>
+                            <h3>Enhancing Collaboration between Patients & Doctors in A Healthcare Provider</h3>
+                            <h3>Enhancing Collaboration between Patients & Doctors in A Healthcare Provider</h3>
                             <a href="#" class="read-more">
                                 <span>Read more</span>
                                 <img src="images/Vector.png" alt="Vector">
@@ -383,6 +386,32 @@
             </div>
         </div>
     </section><!-- /Webinar reasons get in touch -->
+
+    <script>
+            $(document).ready(function() {
+
+                var boxHeight = $('.twok__component__webinarhub__3 .twok__success .twok__success__content .twok__success__box .twok__success__txt').outerHeight();
+                console.log(boxHeight);
+                $(".twok__component__webinarhub__4").css("margin-top", -boxHeight);
+                $(".twok__component__webinarhub__4").css("padding-top", boxHeight + 80);
+            });
+
+            // $(document).ready(function() {
+            //     var $window = $(window);
+
+            //     function checkWidth() {
+            //         var windowsize = $window.width();
+            //         if (windowsize < 767) {
+            //         var boxHeight = $('.twok__component__webinarhub__3 .twok__success .twok__success__content .twok__success__box .twok__success__txt').outerHeight();
+            //         console.log(boxHeight);
+            //         $(".twok__component__webinarhub__4").css("margin-top", -boxHeight);
+            //         $(".twok__component__webinarhub__4").css("padding-top", boxHeight + 80);
+            //     }
+            //     }
+            //     checkWidth();
+            //     $(window).resize(checkWidth);
+            // });
+    </script>
 
 </body>
 
