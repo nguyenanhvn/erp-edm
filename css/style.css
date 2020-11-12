@@ -21,6 +21,24 @@ section {
   text-align: center;
 }
 
+.only-pc {
+  display: block;
+}
+@media (max-width: 767px) {
+  .only-pc {
+    display: none !important;
+  }
+}
+
+.only-sp {
+  display: none;
+}
+@media (max-width: 767px) {
+  .only-sp {
+    display: block !important;
+  }
+}
+
 p {
   color: rgba(5, 22, 35, 0.8);
   font-style: normal;
@@ -53,17 +71,55 @@ h3.twok__title::after {
 }
 
 @media only screen and (max-width: 450px) {
-  h3.twok__title {
+  h3.twok__title, h3.twok__detail__title {
     font-size: 24px !important;
     line-height: 33px !important;
   }
 }
 @media only screen and (max-width: 767px) {
-  h3.twok__title {
+  h3.twok__title, h3.twok__detail__title {
     font-size: 32px;
     line-height: 46px;
   }
 }
+h3.twok__detail__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 70px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #1B2345;
+  margin: 0;
+}
+
+button {
+  background: #F37021;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  margin-top: 40px;
+  color: #ffffff;
+  -ms-transform: scale(1);
+  /* IE 9 */
+  transform: scale(1);
+  /* Standard syntax */
+  transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+button:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  transform: scale(1.1);
+  /* Standard syntax */
+}
+
 /* Component 1 */
 .twok__component__webinarhub__1 {
   margin: 0;
@@ -97,26 +153,6 @@ h3.twok__title::after {
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
-}
-.twok__component__webinarhub__1 .item .item-content button {
-  background: #F37021;
-  border-radius: 4px;
-  border: none;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding: 16px 40px;
-  margin-top: 40px;
-  opacity: 1;
-  transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-}
-.twok__component__webinarhub__1 .item .item-content button:hover {
-  opacity: 0.7;
 }
 .twok__component__webinarhub__1 .item .over-bg {
   position: absolute;
@@ -710,15 +746,15 @@ h3.twok__title::after {
   }
 }
 /* Component 8 */
-.twok__component__webinarhub__8 .twok__touch {
+.twok__component__webinarhub__form .twok__touch {
   display: flex;
   justify-content: space-between;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__title {
+.twok__component__webinarhub__form .twok__touch .twok__touch__title {
   width: 50%;
   padding-right: 30px;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__title h2 {
+.twok__component__webinarhub__form .twok__touch .twok__touch__title h2 {
   color: #005aab;
   font-weight: bold;
   font-size: 48px;
@@ -726,32 +762,32 @@ h3.twok__title::after {
   text-transform: uppercase;
   margin-top: 0;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__title p {
+.twok__component__webinarhub__form .twok__touch .twok__touch__title p {
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__form {
+.twok__component__webinarhub__form .twok__touch .twok__touch__form {
   width: 50%;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__form form .twok__touch__form__name {
+.twok__component__webinarhub__form .twok__touch .twok__touch__form form .twok__touch__form__name {
   display: flex;
   justify-content: space-between;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__form form .twok__touch__form__name div {
+.twok__component__webinarhub__form .twok__touch .twok__touch__form form .twok__touch__form__name div {
   width: 48%;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__form form input[type=text], .twok__component__webinarhub__8 .twok__touch .twok__touch__form form select, .twok__component__webinarhub__8 .twok__touch .twok__touch__form form textarea {
+.twok__component__webinarhub__form .twok__touch .twok__touch__form form input[type=text], .twok__component__webinarhub__form .twok__touch .twok__touch__form form select, .twok__component__webinarhub__form .twok__touch .twok__touch__form form textarea {
   width: 100%;
   background: #d7d7d729;
   border: 1px solid #bbb;
   border-radius: 4px;
   height: 40px;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__form form div {
+.twok__component__webinarhub__form .twok__touch .twok__touch__form form div {
   margin-bottom: 15px;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__form form input[type=submit] {
+.twok__component__webinarhub__form .twok__touch .twok__touch__form form input[type=submit] {
   background: #F37021;
   border-radius: 4px;
   border: none;
@@ -768,22 +804,425 @@ h3.twok__title::after {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
 }
-.twok__component__webinarhub__8 .twok__touch .twok__touch__form form input[type=submit]:hover {
+.twok__component__webinarhub__form .twok__touch .twok__touch__form form input[type=submit]:hover {
   opacity: 0.7;
 }
 
 @media (max-width: 992px) {
-  .twok__component__webinarhub__8 .twok__touch {
+  .twok__component__webinarhub__form .twok__touch {
     display: block;
   }
 
-  .twok__component__webinarhub__8 .twok__touch .twok__touch__title {
+  .twok__component__webinarhub__form .twok__touch .twok__touch__title {
     margin-bottom: 50px;
   }
 
-  .twok__component__webinarhub__8 .twok__touch .twok__touch__title, .twok__component__webinarhub__8 .twok__touch .twok__touch__form {
+  .twok__component__webinarhub__form .twok__touch .twok__touch__title, .twok__component__webinarhub__form .twok__touch .twok__touch__form {
     width: 100%;
     padding-right: 0;
+  }
+}
+/* style detail page */
+/* Component detail 1 */
+.twok__component__webinarhub__detail__1 {
+  background: #F6F7F8;
+  padding: 40px 0 0;
+  position: relative;
+}
+.twok__component__webinarhub__detail__1 .twok__digital .twok__digital__title {
+  display: flex;
+  justify-content: space-between;
+}
+.twok__component__webinarhub__detail__1 .twok__digital .twok__digital__title h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #1B2345;
+}
+.twok__component__webinarhub__detail__1 .twok__digital .twok__digital__title button {
+  width: 262px;
+  height: 68px;
+  text-align: center;
+  margin: auto 0;
+  padding: 0;
+}
+.twok__component__webinarhub__detail__1 .twok__digital a {
+  margin: 16px 0;
+}
+.twok__component__webinarhub__detail__1 img {
+  width: 100%;
+  margin-top: 20px;
+}
+.twok__component__webinarhub__detail__1 .twok__digital__des {
+  background: #0048B3;
+  position: absolute;
+  right: 0;
+  left: 30%;
+  bottom: -92px;
+}
+.twok__component__webinarhub__detail__1 .twok__digital__des p {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 40px 10% 40px 40px;
+}
+
+@media (max-width: 767px) {
+  .twok__component__webinarhub__detail__1 .twok__digital__des {
+    position: inherit;
+  }
+
+  .twok__component__webinarhub__detail__1 {
+    overflow: hidden;
+  }
+
+  .twok__component__webinarhub__detail__1 img {
+    width: auto;
+    margin-top: 20px;
+    height: 600px;
+    overflow: hidden;
+    margin-left: -15px;
+  }
+
+  .twok__component__webinarhub__detail__1 .twok__digital .twok__digital__title h1 {
+    font-size: 40px;
+    line-height: 54px;
+    color: #FFFFFF;
+    text-shadow: 0px 6px 16px rgba(0, 0, 0, 0.44);
+  }
+
+  .twok__component__webinarhub__detail__1 .twok__digital .twok__digital__title {
+    display: block;
+  }
+
+  .twok__component__webinarhub__detail__1 .twok__digital {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 25%;
+    background: rgba(0, 71, 179, 0.6);
+    padding: 35px;
+  }
+
+  .twok__component__webinarhub__detail__1 .twok__digital .twok__digital__title p {
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+  }
+}
+/* Component detail 2 */
+.twok__component__webinarhub__detail__2 {
+  padding: 172px 0 0;
+}
+.twok__component__webinarhub__detail__2 p {
+  margin: 16px 0 0;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(5, 22, 35, 0.8);
+}
+.twok__component__webinarhub__detail__2 .twok__key {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.twok__component__webinarhub__detail__2 .twok__key .twok__key__content {
+  width: calc((100% / 3) - 16px);
+}
+.twok__component__webinarhub__detail__2 .twok__key .twok__key__content .twok__key__item h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #1B2345;
+  padding: 16px;
+  border-bottom: 2px solid #0048B3;
+}
+.twok__component__webinarhub__detail__2 .twok__key .twok__key__content .twok__key__item h5 {
+  padding: 16px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #1B2345;
+}
+.twok__component__webinarhub__detail__2 .twok__key .twok__key__content .twok__key__item .twok__key__item__note {
+  margin: 0 0 16px 16px;
+}
+.twok__component__webinarhub__detail__2 .twok__key .twok__key__content .twok__key__item .twok__key__item__note h6 {
+  margin: 0 0 0 16px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1B2345;
+  position: relative;
+  margin-bottom: 14px;
+}
+.twok__component__webinarhub__detail__2 .twok__key .twok__key__content .twok__key__item .twok__key__item__note h6::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1E71EC;
+  position: absolute;
+  left: -16px;
+  top: 8px;
+}
+.twok__component__webinarhub__detail__2 .twok__key .twok__key__content .twok__key__item .twok__key__item__note a {
+  color: #0048B3;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 0 0 8px;
+  padding: 8px 8px 8px 16px;
+  display: block;
+  background: rgba(244, 246, 250, 0.6);
+  border-radius: 4px;
+  width: 88%;
+}
+
+@media (max-width: 767px) {
+  .twok__component__webinarhub__detail__2 {
+    padding: 36px 0;
+  }
+
+  .twok__component__webinarhub__detail__2 .twok__key .twok__key__content {
+    width: 100%;
+  }
+
+  .twok__component__webinarhub__detail__2 .twok__key {
+    display: block;
+  }
+}
+/* Component detail 3 */
+.twok__component__webinarhub__detail__3 {
+  position: relative;
+  background: #0048B3;
+}
+.twok__component__webinarhub__detail__3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url(../images/bg-benefit.png) 100%;
+  z-index: 0;
+}
+.twok__component__webinarhub__detail__3 .twok__benefits {
+  margin-top: 50px;
+}
+.twok__component__webinarhub__detail__3 .twok__benefits .twok__benefits__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.twok__component__webinarhub__detail__3 .twok__benefits .twok__benefits__item .twok__benefits__item__des {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding: 24px 40px;
+  width: calc((100% / 2) - 16px);
+}
+
+@media (max-width: 767px) {
+  .twok__component__webinarhub__detail__3 .twok__benefits .twok__benefits__item {
+    display: block;
+  }
+
+  .twok__component__webinarhub__detail__3 .twok__benefits .twok__benefits__item .twok__benefits__item__des {
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 16px 26px;
+  }
+
+  .twok__component__webinarhub__detail__3 p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 23px;
+  }
+}
+/* Component detail 4 */
+.twok__component__webinarhub__detail__4 {
+  background: #F6F7F8;
+}
+.twok__component__webinarhub__detail__4 .twok__speak {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.twok__component__webinarhub__detail__4 .twok__speak .twok__speak__item {
+  width: calc((100% / 4) - 32px);
+  padding: 40px;
+  background: #FFFFFF;
+}
+.twok__component__webinarhub__detail__4 .twok__speak .twok__speak__item .twok__speak__item__num {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 76px;
+  color: #0048B3;
+}
+.twok__component__webinarhub__detail__4 .twok__speak .twok__speak__item .twok__speak__item__des {
+  font-size: 15px;
+  line-height: 25px;
+  color: #606060;
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .twok__component__webinarhub__detail__4 .twok__speak {
+    display: block;
+  }
+
+  .twok__component__webinarhub__detail__4 .twok__speak .twok__speak__item {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .twok__component__webinarhub__detail__4 {
+    background: #F6F7F8;
+  }
+}
+/* Component detail 5 */
+.twok__component__webinarhub__detail__5 {
+  position: relative;
+}
+.twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content .twok__reasons__box {
+  z-index: 1;
+  width: calc((100% / 3) - 16px);
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 56px 40px 48px;
+  border: 1px solid #DBDBDB;
+}
+.twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content .twok__reasons__box .twok__reasons__txt h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 45px 0 20px;
+}
+.twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content .twok__reasons__box .twok__reasons__txt p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(5, 22, 35, 0.8);
+}
+.twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content .twok__reasons__box:nth-child(2) {
+  margin: 0 32px;
+}
+@media (max-width: 767px) {
+  .twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content .twok__reasons__box:nth-child(2) {
+    margin: 0 0 20px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content {
+    display: block;
+  }
+
+  .twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content .twok__reasons__box {
+    width: 100% !important;
+    margin: 0 0 20px !important;
+  }
+}
+@media (max-width: 992px) {
+  .twok__component__webinarhub__detail__5 {
+    background: #FFFFFF;
+  }
+
+  .twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content .twok__reasons__box {
+    background: #F8FAFC;
+  }
+
+  .twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content .twok__reasons__box:nth-child(2) {
+    margin: 0 10px;
+  }
+
+  .twok__component__webinarhub__detail__5 .twok__reasons .twok__reasons__content .twok__reasons__box {
+    width: calc((100% / 3) - 5px);
+    padding: 25px 20px 20px;
+  }
+}
+/* Component detail 6 */
+.twok__component__webinarhub__detail__6 {
+  position: relative;
+  background: #0048B3;
+}
+.twok__component__webinarhub__detail__6::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url(../images/bg-benefit.png) 100%;
+  z-index: 0;
+}
+.twok__component__webinarhub__detail__6 .twok__achievement .twok__achievement__content {
+  margin-top: 50px;
+}
+.twok__component__webinarhub__detail__6 .twok__achievement .twok__achievement__content .twok__achievement__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.twok__component__webinarhub__detail__6 .twok__achievement .twok__achievement__content .twok__achievement__item .twok__achievement__item__box {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding: 24px 40px;
+  width: calc((100% / 3) - 16px);
+  display: flex;
+  justify-content: space-between;
+}
+.twok__component__webinarhub__detail__6 .twok__achievement .twok__achievement__content .twok__achievement__item .twok__achievement__item__box img {
+  width: 56px;
+  height: 56px;
+}
+.twok__component__webinarhub__detail__6 .twok__achievement .twok__achievement__content .twok__achievement__item .twok__achievement__item__box .twok__achievement__item__des {
+  width: calc(100% - 100px);
+}
+.twok__component__webinarhub__detail__6 .twok__achievement .twok__achievement__content .twok__achievement__item .twok__achievement__item__box .twok__achievement__item__des h3 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin: 0 0 8px;
+}
+.twok__component__webinarhub__detail__6 .twok__achievement .twok__achievement__content .twok__achievement__item .twok__achievement__item__box .twok__achievement__item__des p {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .twok__component__webinarhub__detail__6 .twok__achievement .twok__achievement__content .twok__achievement__item {
+    display: block;
+  }
+
+  .twok__component__webinarhub__detail__6 .twok__achievement .twok__achievement__content .twok__achievement__item .twok__achievement__item__box {
+    width: 100%;
+    margin-bottom: 16px;
   }
 }
 
